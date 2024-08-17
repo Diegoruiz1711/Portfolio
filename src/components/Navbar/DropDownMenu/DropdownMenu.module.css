@@ -1,0 +1,99 @@
+.dropdownContent {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1000;
+  width: 200px;
+}
+
+.dropdownItem {
+  padding: 1em;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.flag {
+  width: 1.2em;
+}
+
+.dropdownItem:last-child {
+  border-bottom: none;
+}
+
+.dropdownItem:hover {
+  background-color: rgb(169, 167, 167);
+  color: rgb(93, 24, 3);
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+.themeIcon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 1em;
+  transition: color 0.3s ease;
+}
+
+.themeIcon:hover {
+  background-color: rgb(169, 167, 167);
+  color: rgb(93, 24, 3);
+}
+
+.dark {
+  background-color: rgb(30, 29, 29);
+  color: white;
+
+  .link {
+    color: white;
+  }
+
+  .link:hover {
+    color: grey;
+  }
+
+  .themeIcon:hover {
+    color: white;
+  }
+
+  .logo {
+    color: white;
+  }
+
+  .options {
+    background-color: rgb(30, 29, 29);
+    color: white;
+  }
+
+  .hamburgerIcon {
+    color: white;
+    border: 1px solid white;
+  }
+
+  .dropdownItem {
+    padding: 1em;
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+  }
+
+  .dropdownItem:hover {
+    background-color: grey;
+  }
+
+}

@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 98%;
+    height: 250px;
+    margin-top: 2%;
+    padding-left: 2%;
+}
+
+.institution {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.location {
+    display: block;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1%;
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.title {
+    font-size: 1.7em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    padding-top: 0;
+}
+
+.list {
+    padding-top: 2%;
+    font-size: 0.9em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black
+}
+
+.flag {
+    width: 1.2em;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: rgb(30, 29, 29);
+    color: white;
+
+    .location {
+        color: white;
+    }
+
+    .title {
+        color: white;
+    }
+
+    .list {
+        color: white;
+    }
+}

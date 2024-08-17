@@ -1,0 +1,88 @@
+.educationContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+    padding: 0;
+    margin: 0;
+}
+
+.skillsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    height: 33vh;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 100%;
+    border-radius: 15%;
+    border: 2px solid rgb(237, 234, 234);
+    box-shadow: 15px 15px 0 0 rgba(0, 0, 0, 0.5);
+}
+
+.skill:hover {
+    transform: scale(0.9);
+    transition: transform 0.2s ease-in-out;
+}
+
+.skillImage {
+    max-width: 80%;
+    padding: 10%;
+    height: auto;
+}
+
+.contentContainer {
+    flex-grow: 1;
+    /* Permite que este contenedor ocupe el espacio restante */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Themes */
+.light {
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: rgb(30, 29, 29);
+    color: white;
+}
+
+
+@media (max-width: 1200px) {
+    .skill {
+        width: 15%;
+        height: 60%;
+    }
+}
+
+@media (max-width: 992px) {
+    .skill {
+        width: 15%;
+        height: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .skill {
+        width: 15%;
+        height: 40%;
+    }
+}
+
+@media (max-width: 576px) {
+    .skill {
+        width: 15%;
+        height: 30%;
+    }
+}

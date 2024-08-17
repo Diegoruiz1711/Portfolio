@@ -1,0 +1,105 @@
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.section {
+    height: 60vh;
+    width: 30%;
+}
+
+.imgWeb {
+    width: 100%;
+}
+
+.sectionMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 2%;
+}
+
+.imgMobile {
+    width: 100%;
+}
+
+.textSection {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 55%;
+    height: 55vh;
+    padding: 1%;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+.text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+
+.link {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container::-webkit-scrollbar {
+    width: 0.8em;
+}
+
+/* Fondo y borde del track del scrollbar */
+.container::-webkit-scrollbar-track {
+    background: #cfcfcf;
+    border-radius: 1em;
+    margin: 0.5em;
+}
+
+/* Color y borde del thumb del scrollbar */
+.container::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 1em;
+}
+
+/* Color del thumb del scrollbar cuando se pasa el cursor por encima */
+.container::-webkit-scrollbar-thumb:hover {
+    background: #ed4c07;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: rgb(30, 29, 29);
+    color: white;
+
+    .title {
+        color: white
+    }
+
+    .link {
+        color: white;
+        text-decoration: none;
+    }
+
+}

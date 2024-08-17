@@ -1,0 +1,107 @@
+.modalContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 100vh;
+    height: auto;
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid grey;
+    padding: 0 2%;
+
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-weight: bold;
+    height: auto;
+    color: rgb(93, 24, 3);
+}
+
+.modalClose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #333;
+    border-radius: 10%;
+    padding: 0.5% 1%;
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    color: black;
+    font-size: 1em;
+    padding: 2% 4%;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.light {
+    background-color: #fff;
+    color: #000;
+}
+
+.dark {
+    background-color: rgb(30, 29, 29);
+    color: white;
+
+    .modalClose {
+        background-color: rgb(30, 29, 29);
+        color: white;
+    }
+
+    .modalContent {
+        background-color: rgb(30, 29, 29);
+        color: white;
+    }
+
+    .title {
+        color: white
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .modalContainer {
+        width: 500px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .modalContainer {
+        width: 450px;
+        height: auto;
+    }
+}

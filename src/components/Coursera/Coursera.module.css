@@ -1,0 +1,123 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 98%;
+    height: 250px;
+    margin-top: 2%;
+    padding-left: 2%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.institution {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.location {
+    display: block;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 1%;
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.title {
+    font-size: 1.7em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    padding-top: 0;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    padding-top: 1%;
+}
+
+.list {
+    padding-top: 2%;
+    font-size: 0.9em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black
+}
+
+.container::-webkit-scrollbar {
+    width: 0.8em;
+}
+
+/* Fondo y borde del track del scrollbar */
+.container::-webkit-scrollbar-track {
+    background: #cfcfcf;
+    border-radius: 1em;
+    margin: 0.5em;
+}
+
+/* Color y borde del thumb del scrollbar */
+.container::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 1em;
+}
+
+/* Color del thumb del scrollbar cuando se pasa el cursor por encima */
+.container::-webkit-scrollbar-thumb:hover {
+    background: #ed4c07;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        height: 300px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        height: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        height: 400px;
+    }
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: rgb(30, 29, 29);
+    color: white;
+
+    .location {
+        color: white;
+    }
+
+    .title {
+        color: white;
+    }
+
+    .subtitle {
+        color: white;
+    }
+
+    .list {
+        color: white;
+    }
+}

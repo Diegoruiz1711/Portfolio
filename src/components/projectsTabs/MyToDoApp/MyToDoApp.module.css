@@ -1,0 +1,123 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 60vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 60vh;
+    width: 100%;
+    gap: 3%;
+    padding: 1%;
+}
+
+.section2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 60vh;
+    width: 60%;
+    gap: 3%;
+    padding: 1%;
+}
+
+.image {
+    width: 60%;
+}
+
+.image2 {
+    width: 50%;
+}
+
+.textSection {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 30%;
+    height: 60vh;
+    padding: 0%;
+}
+
+.imgCalc {
+    width: 100%;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    padding: 0;
+    margin: 2%;
+}
+
+.link {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    margin: 0;
+    font-weight: bold;
+}
+
+.container::-webkit-scrollbar {
+    width: 0.8em;
+}
+
+/* Fondo y borde del track del scrollbar */
+.container::-webkit-scrollbar-track {
+    background: #cfcfcf;
+    border-radius: 1em;
+    margin: 0.5em;
+}
+
+/* Color y borde del thumb del scrollbar */
+.container::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 1em;
+}
+
+/* Color del thumb del scrollbar cuando se pasa el cursor por encima */
+.container::-webkit-scrollbar-thumb:hover {
+    background: #ed4c07;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: rgb(30, 29, 29);
+    color: white;
+
+    .title {
+        color: white
+    }
+
+    .link {
+        color: white;
+        text-decoration: none;
+    }
+
+}

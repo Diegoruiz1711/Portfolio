@@ -1,0 +1,141 @@
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 98%;
+    height: 10vh;
+    padding: 0 1%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 40%;
+    font-size: 1.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: rgb(93, 24, 3);
+    text-decoration: none;
+}
+
+.logoImg {
+    width: 7%;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+    padding: 0 2%;
+}
+
+.link {
+    text-decoration: none;
+    padding: 0 2%;
+    cursor: pointer;
+    color: rgb(93, 24, 3);
+    transition: color 0.3s ease;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.link:hover {
+    color: #ed4c07;
+}
+
+.flag {
+    width: 1.2em;
+}
+
+.dropdownButton {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburgerIcon {
+    font-size: 1.5em;
+    border: 1px solid rgb(93, 24, 3);
+    color: rgb(93, 24, 3);
+    padding: 0 10%;
+    border-radius: 10%;
+}
+
+.themeIcon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 5%;
+    transition: color 0.3s ease;
+}
+
+.themeIcon:hover {
+    color: rgb(93, 24, 3);
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: rgb(30, 29, 29);
+    color: white;
+
+    .link {
+        color: white;
+    }
+
+    .link:hover {
+        color: grey;
+    }
+
+    .themeIcon:hover {
+        color: grey;
+    }
+
+    .logo {
+        color: white;
+    }
+
+    .options {
+        background-color: rgb(30, 29, 29);
+        color: white;
+    }
+
+    .hamburgerIcon {
+        color: white;
+        border: 1px solid white;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .logo {
+        font-size: 1.1em;
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 810px) {
+    .options {
+        display: none;
+    }
+
+    .logo {
+        font-size: 1em;
+        width: 60%;
+    }
+
+    .dropdownButton {
+        display: block;
+    }
+
+    .logo {
+        font-size: 1.2em;
+        width: 85%;
+    }
+}

@@ -1,0 +1,215 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    flex-direction: column;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: rgb(93, 24, 3);
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    overflow: hidden;
+}
+
+.title span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: fadeInFromRight 0.5s ease-out forwards;
+}
+
+@keyframes fadeInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.title span:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.title span:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.title span:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.title span:nth-child(4) {
+    animation-delay: 0.7s;
+}
+
+.title span:nth-child(5) {
+    animation-delay: 0.9s;
+}
+
+.title span:nth-child(6) {
+    animation-delay: 1.1s;
+}
+
+.skillsContainer {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3%;
+}
+
+.skillImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    object-fit: fill;
+    margin: 5%;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 40%;
+    box-sizing: border-box;
+    border-radius: 15%;
+    border: 2px solid rgb(237, 234, 234);
+    box-shadow: 15px 15px 0 0 rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    animation: fadeInGrow 0.8s ease-out forwards;
+    margin: 2%;
+}
+
+@keyframes fadeInGrow {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.skill:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.skill:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.skill:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.skill:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.skill:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.skill:nth-child(6) {
+    animation-delay: 1.2s;
+}
+
+.skill:nth-child(7) {
+    animation-delay: 1.4s;
+}
+
+.skill:nth-child(8) {
+    animation-delay: 1.6s;
+}
+
+.skill:nth-child(9) {
+    animation-delay: 1.8s;
+}
+
+.skill:nth-child(10) {
+    animation-delay: 2s;
+}
+
+.skill:nth-child(11) {
+    animation-delay: 2s;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: rgb(30, 29, 29);
+    color: white;
+
+    .skill {
+        box-shadow: 15px 15px 0 0 rgba(255, 255, 255, 0.2);
+        opacity: 0;
+        margin: 2%;
+    }
+
+    .title {
+        color: white;
+    }
+
+    .skillsContainer {
+        background-color: rgb(30, 29, 29);
+
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .skill {
+        border: 2px solid rgb(237, 234, 234);
+        box-shadow: 15px 15px 0 0 rgba(0, 0, 0, 0.2);
+        width: 10%;
+        height: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .skill {
+        border: 2px solid rgb(237, 234, 234);
+        box-shadow: 12px 12px 0 0 rgba(0, 0, 0, 0.2);
+        width: 10%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .skill {
+        border: 2px solid rgb(237, 234, 234);
+        box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.2);
+        width: 15%;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .skill {
+        width: 18%;
+        border: 2px solid rgb(237, 234, 234);
+        box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.2);
+        height: auto;
+    }
+}
