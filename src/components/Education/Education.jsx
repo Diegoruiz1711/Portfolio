@@ -5,7 +5,7 @@ import UTNLogo from '../../assets/utnLogo.png'
 import NuclioLogo from '../../assets/nuclio.png'
 import CFPLogo from '../../assets/cfp.png'
 import CodoACodoLogo from '../../assets/codoAcodo.png'
-import CourseraLogo from '../../assets/Coursera.png'
+import CourseraLogo from '../../assets/coursera.png'
 
 import UTN from '../UTN/UTN'
 import Nuclio from '../Nuclio/Nuclio'
