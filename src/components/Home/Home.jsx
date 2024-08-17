@@ -5,7 +5,7 @@ import FotoCV from '../../assets/fotoCV.png'
 import GHDark from '../../assets/ghDark.png'
 import GHLight from '../../assets/ghLight.png'
 import InDark from '../../assets/inDark.png'
-import InLight from '../../assets/InLight.png'
+import InLight from '../../assets/inLight.png'
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
