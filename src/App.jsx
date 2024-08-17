@@ -14,7 +14,7 @@ Modal.setAppElement('#root');
 
 function App() {
   return (
-    <>
+    <div className={styles.container}>
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
@@ -25,7 +25,7 @@ function App() {
       </Routes>
       <CVModal />
       <AboutMeModal />
-    </>
+    </div>
   );
 }
 export default App;

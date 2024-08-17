@@ -19,7 +19,6 @@ const Home = () => {
         <div className={`${styles.container} ${theme === 'dark' ? styles.dark : styles.light}`}>
             <div className={styles.imageSection}>
                 <img src={FotoCV} alt="Imagen Home" className={styles.image} />
-
             </div>
             <div className={styles.introSection}>
                 <div className={styles.titlesSection}>
@@ -43,9 +42,9 @@ const Home = () => {
                 <div className={styles.linkSection}>
                     <div className={styles.button} onClick={() => openModal('aboutMe')}>{t('aboutMe')}</div>
                 </div>
-                <div className={styles.linkSection}>
+                {/* <div className={styles.linkSection}>
                     <div className={styles.button}>{t('contact')}</div>
-                </div>
+                </div> */}
             </div>
         </div>
     )

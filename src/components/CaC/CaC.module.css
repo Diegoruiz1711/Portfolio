@@ -14,17 +14,17 @@
     justify-content: flex-start;
     align-items: flex-start;
     padding-left: 20px;
+    width: 80%;
 }
 
 .location {
-    display: block;
-    flex-direction: column;
-    justify-content: flex-end;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 1%;
     font-size: 1em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: black;
+    width: 20%;
 }
 
 .title {
@@ -43,6 +43,7 @@
 
 .flag {
     width: 1.2em;
+    margin: 0 1%;
 }
 
 .light {

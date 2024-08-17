@@ -16,7 +16,7 @@ const AboutMeModal = () => {
             overlayClassName={styles.modalOverlay}
             shouldCloseOnOverlayClick={false}
         >
-            <div className={`${styles.modalContainer} ${theme === 'dark' ? styles.dark : styles.light}`}>
+            <div className={`${styles.container} ${theme === 'dark' ? styles.dark : styles.light}`}>
                 <div className={styles.header}>
                     <div className={styles.modalClose} onClick={closeModal}>X</div>
                     <div className={styles.modalTitle}><h2 className={styles.title}>{t('aboutMe')}</h2></div>
