@@ -2,7 +2,7 @@ import styles from './CVModal.module.css';
 import { useContext } from 'react';
 import { ProfileContext } from "../../../Context/ProfileContext";
 import Modal from 'react-modal';
-import CVEnglish from '../../../assets/resume.pdf'
+import CVEnglish from '../../../assets/Resume.pdf'
 import CVSpanish from '../../../assets/CV.pdf'
 
 const CVModal = () => {
