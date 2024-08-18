@@ -18,28 +18,29 @@ const Skills = () => {
     const { theme, refresh, setRefresh } = useContext(ProfileContext);
 
     return (
-        <div className={`${styles.menu} ${theme === 'dark' ? styles.dark : styles.light}`}>
-            <div className={styles.container}>
-                <div className={styles.title}>
-                    {['S', 'k', 'i', 'l', 'l', 's'].map((letter, index) => (
-                        <span key={index}>{letter}</span>
-                    ))}
-                </div>
-                <div className={styles.skillsContainer}>
-                    <div className={styles.skill}><img src={React} alt="Logo ReactJs" className={styles.skillImage} /></div>
-                    <div className={styles.skill}><img src={Node} alt="Logo NodeJs" className={styles.skillImage} /></div>
-                    <div className={styles.skill}><img src={Javascript} alt="Logo Javascript" className={styles.skillImage} /></div>
-                    <div className={styles.skill}><img src={ReactNative} alt="Logo react native" className={styles.skillImage} /></div>
-                    <div className={styles.skill}><img src={Java} alt="Logo Java" className={styles.skillImage} /></div>
-                    <div className={styles.skill}><img src={Cypress} alt="Logo cypress" className={styles.skillImage} /></div>
-                    <div className={styles.skill}><img src={Insomnia} alt="Logo insomnia" className={styles.skillImage} /></div>
-                    <div className={styles.skill}><img src={MongoDB} alt="Logo mongoDB" className={styles.skillImage} /></div>
-                    <div className={styles.skill}><img src={Express} alt="Logo express" className={styles.skillImage} /></div>
-                    <div className={styles.skill}><img src={TypeScript} alt="Loso Typescript" className={styles.skillImage} /></div>
-                    <div className={styles.skill}><img src={Bootstrap} alt="Logo Bototstrap" className={styles.skillImage} /></div>
-                </div>
+        <div className={`${styles.container} ${theme === 'dark' ? styles.dark : styles.light}`}>
+
+            <div className={styles.title}>
+                {['S', 'k', 'i', 'l', 'l', 's'].map((letter, index) => (
+                    <span key={index}>{letter}</span>
+                ))}
+            </div>
+
+            <div className={styles.skillsContainer}>
+                <div className={styles.skill}><img src={React} alt="Logo ReactJs" className={styles.skillImage} /></div>
+                <div className={styles.skill}><img src={Node} alt="Logo NodeJs" className={styles.skillImage} /></div>
+                <div className={styles.skill}><img src={Javascript} alt="Logo Javascript" className={styles.skillImage} /></div>
+                <div className={styles.skill}><img src={ReactNative} alt="Logo react native" className={styles.skillImage} /></div>
+                <div className={styles.skill}><img src={Java} alt="Logo Java" className={styles.skillImage} /></div>
+                <div className={styles.skill}><img src={Cypress} alt="Logo cypress" className={styles.skillImage} /></div>
+                <div className={styles.skill}><img src={Insomnia} alt="Logo insomnia" className={styles.skillImage} /></div>
+                <div className={styles.skill}><img src={MongoDB} alt="Logo mongoDB" className={styles.skillImage} /></div>
+                <div className={styles.skill}><img src={Express} alt="Logo express" className={styles.skillImage} /></div>
+                <div className={styles.skill}><img src={TypeScript} alt="Loso Typescript" className={styles.skillImage} /></div>
+                <div className={styles.skill}><img src={Bootstrap} alt="Logo Bototstrap" className={styles.skillImage} /></div>
             </div>
         </div>
+
     )
 }
 

@@ -7,6 +7,7 @@ import styles from './Navbar.module.css';
 import { useTranslation } from 'react-i18next';
 import Spain from '../../assets/spain.png'
 import UK from '../../assets/uk.png'
+import Logo from '../../assets/programmingImg.png'
 
 const Navbar = () => {
 
@@ -43,9 +44,9 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className={`${styles.menu} ${theme === 'dark' ? styles.dark : styles.light}`}>
+        <div className={`${styles.container} ${theme === 'dark' ? styles.dark : styles.light}`}>
             <Link className={styles.logo} to='/'>
-                <div>
+                <img src={Logo} style={{ height: '5vh', padding: '0% 1%' }} alt="" /><div>
                     {t('logo')}
                 </div>
             </Link>

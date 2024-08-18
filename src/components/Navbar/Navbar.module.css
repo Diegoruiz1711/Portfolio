@@ -1,11 +1,12 @@
-.menu {
+.container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     box-sizing: border-box;
-    width: 100%;
-    height: 10vh;
+    width: 100vw;
+    height: 15vh;
     padding: 0 1%;
+    background-color: white;
 }
 
 .logo {
@@ -18,6 +19,7 @@
     font-weight: bold;
     color: rgb(93, 24, 3);
     text-decoration: none;
+
 }
 
 .logoImg {
@@ -54,7 +56,7 @@
 .dropdownButton {
     display: none;
     cursor: pointer;
-    padding: 0 2%;
+    margin-right: 2%;
 }
 
 .hamburgerIcon {
@@ -77,10 +79,6 @@
     color: rgb(93, 24, 3);
 }
 
-.light {
-    background-color: white;
-    color: black;
-}
 
 .dark {
     background-color: rgb(30, 29, 29);
