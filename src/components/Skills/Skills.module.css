@@ -151,14 +151,6 @@
     }
 }
 
-@media screen and (max-width: 400px) {
-    .skill {
-        width: 90%;
-        /* Un solo elemento por fila en pantallas muy pequeñas */
-        height: auto;
-    }
-}
-
 @keyframes fadeInGrow {
     0% {
         opacity: 0;
