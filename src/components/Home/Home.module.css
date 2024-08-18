@@ -1,29 +1,28 @@
 .container {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100vw;
-    min-height: 85vh;
+    height: 97vh;
+    margin-top: 4rem;
     box-sizing: border-box;
-    background-color: white;
+    overflow: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-/* Primera seccion - Imagen*/
 
 .imageSection {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 30vw;
-    height: 90vh;
-    margin: 0;
+    height: 40vh;
 }
 
 .image {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: 40vh;
     border-radius: 50%;
 }
 
@@ -33,31 +32,35 @@
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* Segunda sección - Presentación*/
-
 .introSection {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
-    width: 30vw;
-    height: 90vh;
+    width: 50vw;
+    height: 30vh;
+    margin: 0 3%;
 }
 
 .titlesSection {
+    width: 30vw;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
+}
+
+.textSection {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 3%;
 }
 
 .text {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: left;
     padding: 0;
-    margin: 3rem 1rem;
 }
 
 .title {
@@ -68,7 +71,6 @@
     font-size: 2rem;
     color: rgb(93, 24, 3);
     font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 1rem;
 }
 
@@ -82,25 +84,21 @@
     font-weight: bold;
     letter-spacing: 0.1rem;
     margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-/* Tercera sección - Links */
 
 .aboutContact {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    width: 30vw;
-    height: 60vh;
+    width: 20vw;
 }
 
 .linkSection {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 3% 0;
+    margin: 5% 0;
     width: 9rem;
     height: 2rem;
 }
@@ -128,7 +126,6 @@
     font-size: 1em;
     cursor: pointer;
     border-radius: 1em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     animation: linksIn 2s ease-in-out forwards;
 }
 
@@ -146,7 +143,6 @@
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
     border-radius: 1em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -229,40 +225,35 @@
 
 .social:nth-child(1) {
     animation-delay: 0.2s;
-    /* Primer icono */
+
 }
 
 .social:nth-child(2) {
     animation-delay: 0.6s;
-    /* Segundo icono */
+
 }
 
 .button:nth-child(3) {
     animation-delay: 0.4s;
-    /* Tercer icono */
+
 }
 
-
+/* Aca arranca la joda */
 
 @media screen and (max-width: 900px) {
     .container {
         flex-direction: column;
-        flex-wrap: wrap;
     }
 
     .imageSection {
-        width: 100vw;
-        height: 40vh;
-        align-items: center;
+        width: 60vw;
+        height: 35vh;
         justify-content: center;
-        padding-bottom: 2vh;
         box-sizing: border-box;
     }
 
     .introSection {
         width: 80vw;
-        height: auto;
-        padding-bottom: 2vh;
         box-sizing: border-box;
     }
 
@@ -270,15 +261,9 @@
         height: 30vh;
     }
 
-    .text {
-        margin: 2rem 1rem;
-    }
-
     .aboutContact {
-        display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        width: 100vw;
+        width: 50vw;
         height: 15vh;
         flex-wrap: wrap;
     }
@@ -333,16 +318,42 @@
 
     .social:nth-child(1) {
         animation-delay: 0.2s;
-        /* Primer icono */
     }
 
     .social:nth-child(2) {
         animation-delay: 0.4s;
-        /* Segundo icono */
     }
 
     .button:nth-child(3) {
         animation-delay: 0.6s;
-        /* Tercer icono */
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .imageSection {
+        width: 60vw;
+        height: 25vh;
+        justify-content: center;
+    }
+
+    .introSection {
+        width: 80vw;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .image {
+        height: 20vh;
+    }
+
+    .aboutContact {
+        justify-content: center;
+        width: 80vw;
+        height: 12vh;
     }
 }

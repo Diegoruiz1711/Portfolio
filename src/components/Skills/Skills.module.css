@@ -1,12 +1,14 @@
 .container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 100vw;
-    height: 85vh;
+    justify-content: center;
     flex-direction: column;
+    width: 100vw;
+    height: 97vh;
+    margin-top: 4rem;
     box-sizing: border-box;
-    padding-bottom: 5vh;
+    overflow: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .title {

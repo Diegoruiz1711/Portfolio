@@ -33,10 +33,10 @@ const DropdownMenu = () => {
       <div onClick={() => { openModal('cv'); toggleDropdown(); }} className={styles.dropdownItem}>
         CV
       </div>
-      <div onClick={toggleTheme} className={styles.themeIcon}>
+      <div onClick={toggleTheme} className={styles.dropdownItem}>
         {theme === 'light' ? <FaMoon size={18} /> : <FaSun size={18} />}
       </div>
-      <div onClick={toggleLang} className={styles.themeIcon}>
+      <div onClick={toggleLang} className={styles.dropdownItem}>
         {lang === 'es' ? <img src={UK} alt="Bandera UK" className={styles.flag} /> : <img src={Spain} alt="Bandera Espana" className={styles.flag} />}
 
       </div>

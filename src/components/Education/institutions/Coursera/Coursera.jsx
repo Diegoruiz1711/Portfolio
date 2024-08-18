@@ -1,6 +1,6 @@
 import styles from './Coursera.module.css'
 import { useContext } from 'react'
-import { ProfileContext } from '../../Context/ProfileContext'
+import { ProfileContext } from '../../../../Context/ProfileContext'
 import { useTranslation } from 'react-i18next';
 
 const Coursera = () => {
@@ -10,7 +10,8 @@ const Coursera = () => {
 
     return (
         <div className={`${styles.container} ${theme === 'dark' ? styles.dark : styles.light}`}>
-            <div className={styles.Institution}>
+            <div className={styles.location}>{t('onlineCourses')}</div>
+            <div className={styles.institution}>
                 <h2 className={styles.title}>Coursera</h2>
                 <ul>
                     <h3 className={styles.subtitle}>{t('specializations')}</h3>
@@ -28,12 +29,11 @@ const Coursera = () => {
                     <li className={styles.list}>{t('costs3')}</li>
                     <li className={styles.list}>{t('risks')}</li>
                     <li className={styles.list}>{t('analysis')}</li>
-                    <li className={styles.list}>{t('projectPlanning')}</li>
+                    <li className={styles.list}>{t('projectsPlanning')}</li>
                     <li className={styles.list}>{t('projectManagement')}</li>
                     <li className={styles.list}>{t('formulation')}</li>
                 </ul>
             </div>
-            <div className={styles.location}>{t('onlineCourses')}</div>
         </div>
     )
 }

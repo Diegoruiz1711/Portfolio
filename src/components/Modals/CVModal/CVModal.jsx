@@ -18,10 +18,12 @@ const CVModal = () => {
             overlayClassName={styles.modalOverlay}
             shouldCloseOnOverlayClick={false}
         >
-            <div className={`${styles.modalContainer} ${theme === 'dark' ? styles.dark : styles.light}`}>
-                <div className={styles.modalClose} onClick={closeModal}>X</div>
+            <div className={`${styles.container} ${theme === 'dark' ? styles.dark : styles.light}`}>
+                <div className={styles.header}>
+                    <div className={styles.modalClose} onClick={closeModal}>X</div>
+                    <h2 className={styles.title}>Curriculum Vitae Diego Ruiz Martin</h2>
+                </div>
                 <div className={styles.modalContent}>
-                    <h2>Curriculum Vitae Diego Ruiz Martin</h2>
                     <iframe
                         src={selectedCV}
                         className={styles.pdfViewer}

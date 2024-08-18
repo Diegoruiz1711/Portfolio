@@ -15,22 +15,24 @@ const Home = () => {
     const { t } = useTranslation();
     const ghIcon = theme === 'dark' ? GHDark : GHLight;
     const linkedInIcon = theme === 'dark' ? InDark : InLight;
+
     return (
         <div className={`${styles.container} ${theme === 'dark' ? styles.dark : styles.light}`}>
             <div className={styles.imageSection}>
                 <img src={FotoCV} alt="Imagen Home" className={styles.image} />
             </div>
+
             <div className={styles.introSection}>
                 <div className={styles.titlesSection}>
                     <h2 className={styles.title}>Diego Ruiz Martín</h2>
                     <h3 className={styles.subtitle}>{t('subtitle-home')}</h3>
                 </div>
-                <div >
+                <div className={styles.textSection}>
                     <p className={styles.text}>{t('welcome')}</p>
                     <p className={styles.text}>{t('hi')}</p>
                 </div>
-
             </div>
+
             <div className={styles.aboutContact}>
                 <div className={styles.linkSection}>
                     <Link to='https://github.com/Diegoruiz1711' target='_blank'><img src={ghIcon} alt="Ícono de Github" className={styles.social} />
@@ -42,10 +44,8 @@ const Home = () => {
                 <div className={styles.linkSection}>
                     <div className={styles.button} onClick={() => openModal('aboutMe')}>{t('aboutMe')}</div>
                 </div>
-                {/* <div className={styles.linkSection}>
-                    <div className={styles.button}>{t('contact')}</div>
-                </div> */}
             </div>
+
         </div>
     )
 }

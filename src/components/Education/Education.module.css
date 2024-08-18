@@ -1,89 +1,103 @@
-.educationContainer {
+.container {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    justify-content: space-between;
-    height: 80vh;
-    padding: 0;
-    margin: 0;
+    width: 100vw;
+    height: 97vh;
+    margin-top: 4rem;
+    padding: 2%;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.skillsContainer {
+.institutesContainer {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2%;
-    height: 33vh;
-    padding-top: 2%;
+    height: auto;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
 }
 
-.skill {
+.institutes {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 15%;
-    height: 100%;
+    min-width: 100px;
+    max-width: 180px;
     border-radius: 15%;
     border: 2px solid rgb(237, 234, 234);
-    box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in-out;
+    margin: 1% 0;
 }
 
-.skill:hover {
-    transform: scale(0.9);
-    transition: transform 0.2s ease-in-out;
+.institutes:hover {
+    transform: scale(0.8);
 }
 
-.skillImage {
+.institutesImage {
     max-width: 80%;
-    padding: 10%;
+    padding: 5%;
     height: auto;
 }
 
 .contentContainer {
     flex-grow: 1;
-    /* Permite que este contenedor ocupe el espacio restante */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+    width: 100vw;
+    height: 50vh;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
-/* Themes */
 .light {
     background-color: white;
     color: black;
 }
 
-.dark {
+.dark,
+.dark .container,
+.dark .contentContainer,
+.dark .institutesContainer,
+.dark .institutes,
+.dark .contentContainer {
     background-color: rgb(30, 29, 29);
     color: white;
 }
 
-
 @media (max-width: 1200px) {
-    .skill {
-        width: 15%;
-        height: 60%;
+    .institutesContainer {
+        gap: 3%;
     }
 }
 
 @media (max-width: 992px) {
-    .skill {
-        width: 15%;
-        height: 50%;
+    .institutes {
+        width: 20%;
     }
 }
 
 @media (max-width: 768px) {
-    .skill {
-        width: 15%;
-        height: 40%;
+    .institutes {
+        width: 25%;
+    }
+
+    .institutesContainer {
+        gap: 4%;
     }
 }
 
 @media (max-width: 576px) {
-    .skill {
-        width: 15%;
-        height: 30%;
+    .institutes {
+        width: 23%;
+    }
+
+    .institutesContainer {
+        gap: 5%;
     }
 }

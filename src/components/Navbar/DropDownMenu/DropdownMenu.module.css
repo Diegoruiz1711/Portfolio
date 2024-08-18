@@ -40,20 +40,6 @@
   color: black;
 }
 
-.themeIcon {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  padding: 1em;
-  transition: color 0.3s ease;
-  background-color: white;
-}
-
-.themeIcon:hover {
-  background-color: rgb(169, 167, 167);
-  color: rgb(93, 24, 3);
-}
-
 .dark {
   background-color: rgb(30, 29, 29);
   color: white;
@@ -64,10 +50,6 @@
 
   .link:hover {
     color: grey;
-  }
-
-  .themeIcon:hover {
-    color: white;
   }
 
   .logo {
@@ -92,6 +74,7 @@
     cursor: pointer;
     border-bottom: 1px solid #ddd;
     transition: background-color 0.3s ease;
+    background-color: rgb(30, 29, 29);
   }
 
   .dropdownItem:hover {
