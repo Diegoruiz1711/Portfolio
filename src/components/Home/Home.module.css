@@ -115,8 +115,6 @@
     padding: 0;
 }
 
-
-
 .button {
     display: flex;
     align-items: center;
@@ -147,7 +145,6 @@
     margin: 1%;
     transform: scale(1.2);
     transition: transform 0.2s ease-in-out;
-    font-size: 1.2em;
     cursor: pointer;
     border-radius: 1em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -172,7 +169,6 @@
     }
 }
 
-
 .container::-webkit-scrollbar {
     width: 0.8em;
 }
@@ -186,15 +182,14 @@
 
 /* Color y borde del thumb del scrollbar */
 .container::-webkit-scrollbar-thumb {
-    background: grey;
+    background: rgb(223, 222, 222);
     border-radius: 1em;
 }
 
 /* Color del thumb del scrollbar cuando se pasa el cursor por encima */
 .container::-webkit-scrollbar-thumb:hover {
-    background: #ed4c07;
+    background: #5a5958;
 }
-
 
 @keyframes slideInRotate {
     0% {

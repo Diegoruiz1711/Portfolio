@@ -12,14 +12,11 @@ import Javascript from '../../assets/javascript.png'
 import Express from '../../assets/express.png'
 import { useContext } from 'react'
 import { ProfileContext } from '../../Context/ProfileContext'
-import { useTranslation } from 'react-i18next'
 
 const Skills = () => {
 
     const { theme, refresh, setRefresh } = useContext(ProfileContext);
-    const { t } = useTranslation();
 
-    const title = t('skillsTitle');
     return (
         <div className={`${styles.menu} ${theme === 'dark' ? styles.dark : styles.light}`}>
             <div className={styles.container}>
