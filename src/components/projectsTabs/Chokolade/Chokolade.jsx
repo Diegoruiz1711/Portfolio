@@ -1,5 +1,5 @@
+import ChokoladeVideo from '../../../assets/videos/chokoladeVideo.mp4'
 import styles from './Chokolade.module.css'
-import ChokoladeWeb from '../../../assets/chokoladeWeb.png'
 import ChokoladeMobile from '../../../assets/chokoladeMobile.png'
 import { Link } from 'react-router-dom'
 import { useContext } from 'react'
@@ -13,12 +13,6 @@ const Chokolade = () => {
     const { t } = useTranslation();
     return (
         <div className={`${styles.container} ${theme === 'dark' ? styles.dark : styles.light}`}>
-            <div className={styles.section}>
-                <img src={ChokoladeWeb} alt="Chokolade Web" className={styles.imgWeb} />
-            </div>
-            <div className={styles.sectionMobile}>
-                <img src={ChokoladeMobile} alt="Chokolade Mobile" className={styles.imgMobile} />
-            </div>
             <div className={styles.textSection}>
                 <h2 className={styles.title}>Chokolade La Plata</h2>
                 <p className={styles.text}>{t('chokoladeDescription1')}</p>
@@ -28,6 +22,12 @@ const Chokolade = () => {
                         {t('repository')}
                     </p>
                 </Link>
+            </div>
+            <div className={styles.section}>
+                <video src={ChokoladeVideo} controls className={styles.chokoladeVideo}></video>
+            </div>
+            <div className={styles.sectionMobile}>
+                <img src={ChokoladeMobile} alt="Chokolade Mobile" className={styles.imgMobile} />
             </div>
         </div>
     )

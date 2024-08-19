@@ -37,7 +37,7 @@
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    width: 50vw;
+    width: 30vw;
     height: 30vh;
     margin: 0 3%;
 }
@@ -91,7 +91,7 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    width: 20vw;
+    width: 30vw;
 }
 
 .linkSection {

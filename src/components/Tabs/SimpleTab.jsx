@@ -41,12 +41,15 @@ const SimpleTab = () => {
                 value={activeTab}
                 onChange={handleChange}
                 aria-label="Proyectos"
+                variant="scrollable"
+                scrollButtons="on"
+                allowScrollButtonsMobile
                 sx={{
                     borderBottom: 1,
                     borderColor: 'divider',
                     backgroundColor: theme === 'dark' ? 'rgb(30, 29, 29)' : 'white',
-                    overflowX: 'auto',
-                    whiteSpace: 'nowrap',
+                    minWidth: '150px',
+                    marginTop: '5rem'
                 }}
             >
                 <Tab

@@ -47,7 +47,7 @@ const Navbar = () => {
     return (
         <div className={`${styles.container} ${theme === 'dark' ? styles.dark : styles.light}`}>
             <Link className={styles.logo} to='/'>
-                <img src={Logo} style={{ height: '5vh', padding: '0% 1%' }} alt="" /><div>
+                <img src={Logo} style={{ height: '5vh', padding: '0% 1%' }} alt="Logo" /><div>
                     {t('logo')}
                 </div>
             </Link>
