@@ -117,36 +117,12 @@
         border-bottom: 1px solid grey;
     }
 
-    .title {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        font-weight: bold;
-        height: auto;
-        color: rgb(93, 24, 3);
-    }
-
     .modalClose {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 1%;
-        right: 1%;
-        cursor: pointer;
-        font-size: 1.2em;
-        color: #333;
         padding: 0.5% 1%;
     }
 
     .modalContent {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         height: auto;
-        color: black;
         font-size: 0.9em;
     }
 }

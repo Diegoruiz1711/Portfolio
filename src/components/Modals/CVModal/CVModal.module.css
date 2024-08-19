@@ -5,18 +5,16 @@
     border-radius: 10px;
     margin: 0 auto;
     width: 70vw;
-    max-width: 100%;
-    height: 90vh;
+    height: 80vh;
     position: relative;
 }
-
 
 .container {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    width: 96%;
-    height: 90vh;
+    width: 97%;
+    height: 100%;
     position: relative;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 0 2%;
@@ -26,7 +24,6 @@
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid grey;
-    width: 100%;
 }
 
 .title {
@@ -37,7 +34,6 @@
     font-weight: bold;
     height: auto;
     color: rgb(93, 24, 3);
-    width: 90%;
 }
 
 .modalClose {
@@ -50,8 +46,8 @@
     cursor: pointer;
     font-size: 1.2em;
     color: #333;
-    padding: 0.5% 1%;
-    width: 10%;
+    border-radius: 10%;
+    padding: 2%;
 }
 
 .modalOverlay {
@@ -69,10 +65,13 @@
 
 .modalContent {
     display: flex;
-    object-fit: contain;
-    flex-grow: 1;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: black;
+    font-size: 1em;
+    height: 100%;
+    object-fit: cover;
 }
 
 .pdfViewer {
@@ -100,9 +99,24 @@
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .modalContainer {
-        width: 90vw;
-        height: 90vh;
+        width: 90%;
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .modalContainer {
+        width: 90%;
+    }
+
+    .modalClose {
+        padding: 0.5% 1%;
+    }
+
+    .modalContent {
+        height: 100%;
+        font-size: 0.9em;
     }
 }
