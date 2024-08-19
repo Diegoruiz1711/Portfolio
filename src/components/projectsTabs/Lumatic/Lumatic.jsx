@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import styles from './Lumatic.module.css'
-import LumaticVideo from '../../../assets/videos/lumaticVideo.webm'
+import LumaticVideo from '../../../assets/videos/lumaticVideo.mp4'
 import { useContext } from 'react'
 import { ProfileContext } from '../../../Context/ProfileContext'
 import LumaticMobile from '../../../assets/images/lumaticMobile.png'

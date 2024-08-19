@@ -2,7 +2,7 @@ import styles from './JSCalculator.module.css'
 import { useContext } from 'react'
 import { ProfileContext } from '../../../Context/ProfileContext'
 import { Link } from 'react-router-dom'
-import CalculatorVideo from '../../../assets/videos/calculatorVideo.webm'
+import CalculatorVideo from '../../../assets/videos/calculatorVideo.mp4'
 import { useTranslation } from 'react-i18next'
 
 const JSCalculator = () => {
