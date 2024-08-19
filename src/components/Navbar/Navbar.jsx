@@ -6,9 +6,9 @@ import { FaMoon, FaSun } from 'react-icons/fa';
 import { LuMenuSquare } from "react-icons/lu";
 import styles from './Navbar.module.css';
 import { useTranslation } from 'react-i18next';
-import Spain from '../../assets/spain.png'
-import UK from '../../assets/uk.png'
-import Logo from '../../assets/programmingImg.png'
+import Spain from '../../assets/images/spain.png'
+import UK from '../../assets/images/uk.png'
+import Logo from '../../assets/images/programmingImg.png'
 
 const Navbar = () => {
 

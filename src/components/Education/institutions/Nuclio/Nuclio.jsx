@@ -1,5 +1,5 @@
 import styles from './Nuclio.module.css'
-import ESPflag from '../../../../assets/spain.png'
+import ESPflag from '../../../../assets/images/spain.png'
 import { useContext } from 'react'
 import { ProfileContext } from '../../../../Context/ProfileContext'
 import { useTranslation } from 'react-i18next'

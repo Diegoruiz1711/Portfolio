@@ -1,6 +1,6 @@
 import ChokoladeVideo from '../../../assets/videos/chokoladeVideo.mp4'
 import styles from './Chokolade.module.css'
-import ChokoladeMobile from '../../../assets/chokoladeMobile.png'
+import ChokoladeMobile from '../../../assets/images/chokoladeMobile.png'
 import { Link } from 'react-router-dom'
 import { useContext } from 'react'
 import { ProfileContext } from '../../../Context/ProfileContext'

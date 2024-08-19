@@ -1,11 +1,11 @@
 import { useContext } from 'react';
 import styles from './Home.module.css';
 import { ProfileContext } from '../../Context/ProfileContext';
-import FotoCV from '../../assets/fotoCV.png'
-import GHDark from '../../assets/ghDark.png'
-import GHLight from '../../assets/ghLight.png'
-import InDark from '../../assets/inDark.png'
-import InLight from '../../assets/inLight.png'
+import FotoCV from '../../assets/images/fotoCV.png'
+import GHDark from '../../assets/images/ghDark.png'
+import GHLight from '../../assets/images/ghLight.png'
+import InDark from '../../assets/images/inDark.png'
+import InLight from '../../assets/images/inLight.png'
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 

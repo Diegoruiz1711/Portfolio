@@ -10,35 +10,12 @@
     color: black;
 }
 
-.section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40vw;
-}
-
-.chokoladeVideo {
-    width: 100%;
-}
-
-.sectionMobile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20vw;
-    padding: 2%;
-}
-
-.imgMobile {
-    width: 50%;
-}
-
 .textSection {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    width: 30vw;
+    width: 95vw;
     padding: 1%;
     box-sizing: border-box;
 }
@@ -57,7 +34,30 @@
 .text {
     text-align: left;
     box-sizing: border-box;
-    margin: 1%;
+    margin: 0.5%;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+}
+
+.chokoladeVideo {
+    width: 100%;
+}
+
+.sectionMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30vw;
+    padding: 2%;
+}
+
+.imgMobile {
+    width: 50%;
 }
 
 .link {
@@ -66,28 +66,6 @@
     text-decoration: none;
     font-weight: bold;
 }
-
-/* .container::-webkit-scrollbar {
-    width: 0.8em;
-} */
-
-/* Fondo y borde del track del scrollbar */
-/* .container::-webkit-scrollbar-track {
-    background: #cfcfcf;
-    border-radius: 1em;
-    margin: 0.5em;
-} */
-
-/* Color y borde del thumb del scrollbar */
-/* .container::-webkit-scrollbar-thumb {
-    background: grey;
-    border-radius: 1em;
-} */
-
-/* Color del thumb del scrollbar cuando se pasa el cursor por encima */
-/* .container::-webkit-scrollbar-thumb:hover {
-    background: #ed4c07;
-} */
 
 .light {
     background-color: white;
@@ -106,6 +84,7 @@
         color: white;
         text-decoration: none;
     }
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -118,7 +97,7 @@
     }
 
     .imgMobile {
-        width: 70%;
+        width: 60%;
     }
 }
 
@@ -130,7 +109,7 @@
 
 @media screen and (max-width: 768px) {
     .section {
-        width: 60vw;
+        width: 90vw;
     }
 
     .textSection {
@@ -144,21 +123,11 @@
 
     .text {
         font-size: 0.9em;
-        margin: 2%;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .textSection {
-        width: 80vw;
-        margin-bottom: 3%;
-    }
-
-    .section {
-        width: 80vw;
-    }
-
-    .imgMobile {
-        width: 80%;
+    .text {
+        font-size: 0.8em;
     }
 }

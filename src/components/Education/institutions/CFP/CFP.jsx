@@ -1,5 +1,5 @@
 import styles from './CFP.module.css'
-import ARGflag from '../../../../assets/argentina.png'
+import ARGflag from '../../../../assets/images/argentina.png'
 import { useContext } from 'react'
 import { ProfileContext } from '../../../../Context/ProfileContext'
 import { useTranslation } from 'react-i18next';

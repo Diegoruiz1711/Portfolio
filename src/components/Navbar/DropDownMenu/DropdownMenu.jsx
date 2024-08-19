@@ -3,8 +3,8 @@ import styles from './DropdownMenu.module.css';
 import { ProfileContext } from '../../../Context/ProfileContext';
 import { Link } from 'react-router-dom';
 import { FaMoon, FaSun } from 'react-icons/fa';
-import Spain from '../../../assets/spain.png'
-import UK from '../../../assets/uk.png'
+import Spain from '../../../assets/images/spain.png'
+import UK from '../../../assets/images/uk.png'
 import { useTranslation } from 'react-i18next';
 
 const DropdownMenu = () => {

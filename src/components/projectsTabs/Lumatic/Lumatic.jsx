@@ -3,7 +3,7 @@ import styles from './Lumatic.module.css'
 import LumaticVideo from '../../../assets/videos/lumaticVideo.webm'
 import { useContext } from 'react'
 import { ProfileContext } from '../../../Context/ProfileContext'
-import LumaticMobile from '../../../assets/lumaticMobile.png'
+import LumaticMobile from '../../../assets/images/lumaticMobile.png'
 import { useTranslation } from 'react-i18next'
 
 
