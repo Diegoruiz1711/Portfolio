@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
+bfg.jar
 
 # Editor directories and files
 .vscode/*
