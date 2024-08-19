@@ -7,10 +7,11 @@ const ProfileProvider = ({ children }) => {
     // useStates
     const [activeModal, setActiveModal] = useState(null);
     const [activeComponent, setActiveComponent] = useState(null);
-    const [dropdownOpen, setDropdownOpen] = useState(false)
+    const [dropdownOpen, setDropdownOpen] = useState(false);
     const [theme, setTheme] = useState('light');
-    const [activeTab, setActiveTab] = useState(0)
-    const [lang, setLang] = useState('es')
+    const [activeTab, setActiveTab] = useState(0);
+    const [lang, setLang] = useState('es');
+    const [selectedInstitute, setSelectedInstitute] = useState(null);
 
     // Funtions
 
@@ -44,6 +45,14 @@ const ProfileProvider = ({ children }) => {
         setActiveTab(newValue)
     }
 
+    const handleInstituteClick = (institute) => {
+        if (selectedInstitute === institute) {
+            setSelectedInstitute(null);
+        } else {
+            setSelectedInstitute(institute);
+        }
+    };
+
 
     // Context
     const contextValue = {
@@ -65,7 +74,10 @@ const ProfileProvider = ({ children }) => {
         handleChange,
         lang,
         setLang,
-        toggleLang
+        toggleLang,
+        selectedInstitute,
+        setSelectedInstitute,
+        handleInstituteClick
     };
 
     return (

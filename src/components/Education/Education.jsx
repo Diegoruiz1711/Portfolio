@@ -15,13 +15,14 @@ import Coursera from './institutions/Coursera/Coursera'
 
 const Education = () => {
 
-    const { setModalIsOpen,
-        handleOpenCVModal,
-        closeCVModal,
+    const {
         activeComponent,
         setActiveComponent,
         toggleComponent,
-        theme } = useContext(ProfileContext)
+        theme,
+        selectedInstitute,
+        setSelectedInstitute,
+        handleInstituteClick } = useContext(ProfileContext)
 
     useEffect(() => {
         setActiveComponent(null)
@@ -32,19 +33,54 @@ const Education = () => {
         <>
             <div className={`${styles.container} ${theme === 'dark' ? styles.dark : styles.light}`}>
                 <div className={styles.institutesContainer}>
-                    <div className={styles.institutes} onClick={() => toggleComponent('UTN')}>
+                    <div
+                        className={styles.institutes}
+                        style={{ transform: selectedInstitute === 'UTN' ? 'scale(0.8)' : 'scale(1)' }}
+                        onClick={() => {
+                            toggleComponent('UTN');
+                            handleInstituteClick('UTN');
+                        }}
+                    >
                         <img src={UTNLogo} alt="Logo UTN" className={styles.institutesImage} />
                     </div>
-                    <div className={styles.institutes} onClick={() => toggleComponent('Nuclio')}>
+                    <div
+                        className={styles.institutes}
+                        style={{ transform: selectedInstitute === 'Nuclio' ? 'scale(0.8)' : 'scale(1)' }}
+                        onClick={() => {
+                            toggleComponent('Nuclio');
+                            handleInstituteClick('Nuclio');
+                        }}
+                    >
                         <img src={NuclioLogo} alt="Logo Nuclio" className={styles.institutesImage} />
                     </div>
-                    <div className={styles.institutes} onClick={() => toggleComponent('CodoACodo')}>
+                    <div
+                        className={styles.institutes}
+                        style={{ transform: selectedInstitute === 'CodoACodo' ? 'scale(0.8)' : 'scale(1)' }}
+                        onClick={() => {
+                            toggleComponent('CodoACodo');
+                            handleInstituteClick('CodoACodo');
+                        }}
+                    >
                         <img src={CodoACodoLogo} alt="Logo Codo a Codo" className={styles.institutesImage} />
                     </div>
-                    <div className={styles.institutes} onClick={() => toggleComponent('CFP')}>
+                    <div
+                        className={styles.institutes}
+                        style={{ transform: selectedInstitute === 'CFP' ? 'scale(0.8)' : 'scale(1)' }}
+                        onClick={() => {
+                            toggleComponent('CFP');
+                            handleInstituteClick('CFP');
+                        }}
+                    >
                         <img src={CFPLogo} alt="Logo CFP" className={styles.institutesImage} />
                     </div>
-                    <div className={styles.institutes} onClick={() => toggleComponent('Coursera')}>
+                    <div
+                        className={styles.institutes}
+                        style={{ transform: selectedInstitute === 'Coursera' ? 'scale(0.8)' : 'scale(1)' }}
+                        onClick={() => {
+                            toggleComponent('Coursera');
+                            handleInstituteClick('Coursera');
+                        }}
+                    >
                         <img src={CourseraLogo} alt="Logo Coursera" className={styles.institutesImage} />
                     </div>
                 </div>
