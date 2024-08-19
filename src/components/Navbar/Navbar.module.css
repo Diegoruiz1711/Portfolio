@@ -57,23 +57,6 @@
     width: 1.2em;
 }
 
-.dropdownButton {
-    display: none;
-    cursor: pointer;
-    margin-right: 2%;
-}
-
-.hamburgerIcon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5em;
-    border: 1px solid rgb(93, 24, 3);
-    color: rgb(93, 24, 3);
-    border-radius: 10%;
-    padding: 0 10%;
-}
-
 .themeIcon {
     display: flex;
     align-items: center;
@@ -111,12 +94,6 @@
         background-color: rgb(30, 29, 29);
         color: white;
     }
-
-    .hamburgerIcon {
-        color: white;
-        border: 1px solid white;
-    }
-
 }
 
 @media screen and (max-width: 1000px) {
@@ -135,14 +112,5 @@
     .logo {
         font-size: 1em;
         width: 60%;
-    }
-
-    .dropdownButton {
-        display: block;
-    }
-
-    .logo {
-        font-size: 1.2em;
-        width: 85%;
     }
 }

@@ -35,6 +35,7 @@
   color: rgb(93, 24, 3);
 }
 
+
 .light {
   background-color: white;
   color: black;
@@ -43,42 +44,41 @@
 .dark {
   background-color: rgb(30, 29, 29);
   color: white;
+}
 
-  .link {
-    color: white;
-  }
+.dark .link {
+  color: white;
+}
 
-  .link:hover {
-    color: grey;
-  }
+.dark .link:hover {
+  color: grey;
+}
 
-  .logo {
-    color: white;
-  }
+.dark .logo {
+  color: white;
+}
 
-  .options {
-    background-color: rgb(30, 29, 29);
-    color: white;
-  }
+.dark .options {
+  background-color: rgb(30, 29, 29);
+  color: white;
+}
 
-  .hamburgerIcon {
-    color: white;
-    border: 1px solid white;
-  }
+.dark .hamburgerIcon {
+  color: white;
+  border: 2px solid white;
+}
 
-  .dropdownItem {
-    padding: 1em;
-    color: #FFF;
-    text-decoration: none;
-    display: block;
-    cursor: pointer;
-    border-bottom: 1px solid #ddd;
-    transition: background-color 0.3s ease;
-    background-color: rgb(30, 29, 29);
-  }
+.dark .dropdownItem {
+  padding: 1em;
+  color: #FFF;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+  background-color: rgb(30, 29, 29);
+}
 
-  .dropdownItem:hover {
-    background-color: grey;
-  }
-
+.dark .dropdownItem:hover {
+  background-color: grey;
 }

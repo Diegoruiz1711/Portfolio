@@ -3,6 +3,7 @@ import { useContext, useState, useEffect } from 'react';
 import { ProfileContext } from '../../Context/ProfileContext';
 import DropdownMenu from './DropDownMenu/DropdownMenu';
 import { FaMoon, FaSun } from 'react-icons/fa';
+import { LuMenuSquare } from "react-icons/lu";
 import styles from './Navbar.module.css';
 import { useTranslation } from 'react-i18next';
 import Spain from '../../assets/spain.png'
@@ -51,8 +52,8 @@ const Navbar = () => {
                 </div>
             </Link>
             {isMobile ? (
-                <div className={styles.dropdownButton} onClick={toggleDropdown}>
-                    <span className={styles.hamburgerIcon}>☰</span>
+                <div className={styles.link} onClick={toggleDropdown}>
+                    <LuMenuSquare size={36} />
                 </div>
             ) : (
                 <div className={styles.options}>
