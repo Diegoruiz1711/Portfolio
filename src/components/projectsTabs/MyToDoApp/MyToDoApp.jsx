@@ -2,7 +2,7 @@ import styles from './MyToDoApp.module.css'
 import { useContext } from 'react'
 import { ProfileContext } from '../../../Context/ProfileContext'
 import { Link } from 'react-router-dom'
-import MyToDoAppVideo from '../../../assets/videos/myToDoAppVideo.wmp4'
+import MyToDoAppVideo from '../../../assets/videos/myToDoAppVideo.mp4'
 import { useTranslation } from 'react-i18next'
 
 
