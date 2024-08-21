@@ -10,6 +10,7 @@ import Insomnia from '../../assets/images/insomnia.png'
 import MongoDB from '../../assets/images/mongoDB.png'
 import Javascript from '../../assets/images/javascript.png'
 import Express from '../../assets/images/express.png'
+import Figma from '../../assets/images/figma.png'
 import { useContext } from 'react'
 import { ProfileContext } from '../../Context/ProfileContext'
 
@@ -38,6 +39,8 @@ const Skills = () => {
                 <div className={styles.skill}><img src={Express} alt="Logo express" className={styles.skillImage} /></div>
                 <div className={styles.skill}><img src={TypeScript} alt="Loso Typescript" className={styles.skillImage} /></div>
                 <div className={styles.skill}><img src={Bootstrap} alt="Logo Bototstrap" className={styles.skillImage} /></div>
+                <div className={styles.skill}><img src={Figma} alt="Logo Bototstrap" className={styles.skillImage} /></div>
+
             </div>
         </div>
 

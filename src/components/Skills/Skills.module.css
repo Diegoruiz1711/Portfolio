@@ -155,6 +155,10 @@
     animation-delay: 2s;
 }
 
+.skill:nth-child(12) {
+    animation-delay: 2s;
+}
+
 .light {
     background-color: white;
     color: black;
