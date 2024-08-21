@@ -4,7 +4,7 @@ import { ProfileContext } from "../../../Context/ProfileContext";
 import Modal from 'react-modal';
 import CVEnglish from '../../../assets/images/resume.png'
 import CVSpanish from '../../../assets/images/CV.png'
-import CVEnglishPDF from '../../../assets/resume.pdf'
+import CVEnglishPDF from '../../../assets/Resume.pdf'
 import CVSpanishPDF from '../../../assets/CV.pdf'
 import { useTranslation } from 'react-i18next'
 
