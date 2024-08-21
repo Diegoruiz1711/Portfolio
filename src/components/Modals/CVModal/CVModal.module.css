@@ -166,7 +166,7 @@
     }
 }
 
-/* 
+
 @media screen and (max-width: 800px) {
     .modalContainer {
         width: 90%;
@@ -184,7 +184,13 @@
     }
 
     .modalContent {
-        height: 100%;
         font-size: 0.9em;
     }
-} */
+}
+
+@media screen and (max-width: 480px) {
+    .modalContainer {
+        width: 90%;
+        height: auto;
+    }
+}
