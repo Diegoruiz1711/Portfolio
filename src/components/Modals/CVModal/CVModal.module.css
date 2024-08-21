@@ -20,6 +20,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     overflow-y: auto;
     overflow-x: hidden;
+    padding: 0 2%;
 
 }
 
@@ -71,12 +72,11 @@
     justify-content: center;
     position: absolute;
     top: 1%;
-    right: 1%;
+    right: 0.5%;
     cursor: pointer;
     font-size: 1.2em;
     color: #333;
-    border-radius: 10%;
-    width: 10%;
+    width: 5%;
     padding: 1%;
 }
 
@@ -86,6 +86,7 @@
     align-items: center;
     justify-content: center;
     font-size: 1em;
+    padding-top: 0.5%;
 }
 
 .imageViewer {
@@ -164,8 +165,13 @@
         background-color: rgb(30, 29, 29);
         color: white;
     }
-}
 
+    .container {
+        background-color: rgb(30, 29, 29);
+        color: white;
+    }
+
+}
 
 @media screen and (max-width: 800px) {
     .modalContainer {
