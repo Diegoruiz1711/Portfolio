@@ -114,3 +114,14 @@
         width: 60%;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .options {
+        display: none;
+    }
+
+    .logo {
+        font-size: 0.9em;
+        width: 80%;
+    }
+}

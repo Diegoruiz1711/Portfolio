@@ -18,7 +18,6 @@ const Lumatic = () => {
                 <p className={styles.text}>{t('lumaticDescription1')}</p>
                 <p className={styles.text}>{t('lumaticDescription2')}</p>
                 <p className={styles.text}>{t('lumaticDescription3')}</p>
-                <p className={styles.text}>{t('lumaticDescription4')}</p>
                 <Link to='https://github.com/nds-fsd/luma' target='_blank' className={styles.link}>
                     <p className={styles.text}>{t('repository')}</p>
                 </Link>

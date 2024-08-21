@@ -2,13 +2,18 @@ import styles from './CVModal.module.css';
 import { useContext } from 'react';
 import { ProfileContext } from "../../../Context/ProfileContext";
 import Modal from 'react-modal';
-import CVEnglish from '../../../assets/Resume.pdf'
-import CVSpanish from '../../../assets/CV.pdf'
+import CVEnglish from '../../../assets/images/resume.png'
+import CVSpanish from '../../../assets/images/CV.png'
+import CVEnglishPDF from '../../../assets/resume.pdf'
+import CVSpanishPDF from '../../../assets/CV.pdf'
+import { useTranslation } from 'react-i18next'
 
 const CVModal = () => {
 
     const { activeModal, closeModal, theme, lang, setLang, toggleLang } = useContext(ProfileContext);
     const selectedCV = lang === 'en' ? CVEnglish : CVSpanish;
+    const selectedPDF = lang === 'en' ? CVEnglishPDF : CVSpanishPDF;
+    const { t } = useTranslation();
 
     return (
         <Modal
@@ -16,7 +21,6 @@ const CVModal = () => {
             onRequestClose={closeModal}
             className={styles.modalContainer}
             overlayClassName={styles.modalOverlay}
-            shouldCloseOnOverlayClick={false}
         >
             <div className={`${styles.container} ${theme === 'dark' ? styles.dark : styles.light}`}>
                 <div className={styles.header}>
@@ -24,11 +28,16 @@ const CVModal = () => {
                     <h2 className={styles.title}>Curriculum Vitae Diego Ruiz Martin</h2>
                 </div>
                 <div className={styles.modalContent}>
-                    <iframe
+                    <img
                         src={selectedCV}
-                        className={styles.pdfViewer}
-                        title="Curriculum Vitae"
+                        alt="Curriculum Vitae"
+                        className={styles.imageViewer}
                     />
+                </div>
+                <div className={styles.footer}>
+                    <a href={selectedPDF} download="Curriculum_Vitae.pdf" className={styles.button}>
+                        {t('downloadCV')}
+                    </a>
                 </div>
             </div>
         </Modal>

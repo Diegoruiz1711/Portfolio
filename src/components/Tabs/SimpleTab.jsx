@@ -1,4 +1,3 @@
-import styles from './SimpleTab.module.css';
 import React, { useContext, useEffect } from 'react';
 import { Tabs, Tab, Box, Typography } from '@mui/material';
 import { ProfileContext } from '../../Context/ProfileContext';
@@ -7,6 +6,7 @@ import JSCalculator from '../projectsTabs/JSCalculator/JSCalculator';
 import Lumatic from '../projectsTabs/Lumatic/Lumatic';
 import MyToDoApp from '../projectsTabs/MyToDoApp/MyToDoApp';
 import { useTranslation } from 'react-i18next';
+import styles from './SimpleTab.module.css'; /* Importa el CSS */
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -32,9 +32,11 @@ const SimpleTab = () => {
     const { theme, activeTab, setActiveTab, handleChange } = useContext(ProfileContext);
 
     useEffect(() => {
-        setActiveTab(0)
-    }, [])
+        setActiveTab(0);
+    }, []);
+
     const { t } = useTranslation();
+
     return (
         <div className={`${styles.tabsContainer} ${theme === 'dark' ? styles.dark : styles.light}`}>
             <Tabs
@@ -44,12 +46,13 @@ const SimpleTab = () => {
                 variant="scrollable"
                 scrollButtons="on"
                 allowScrollButtonsMobile
+                className={styles.tabs} /* Aplica la clase */
                 sx={{
                     borderBottom: 1,
                     borderColor: 'divider',
                     backgroundColor: theme === 'dark' ? 'rgb(30, 29, 29)' : 'white',
                     minWidth: '150px',
-                    marginTop: '5rem'
+                    marginTop: '5rem',
                 }}
             >
                 <Tab
@@ -59,7 +62,7 @@ const SimpleTab = () => {
                         backgroundColor: theme === 'dark' ? 'rgb(30, 29, 29)' : 'white',
                         '&.Mui-selected': {
                             color: theme === 'dark' ? 'black' : 'white',
-                            backgroundColor: theme === 'dark' ? 'white' : 'rgb(30, 29, 29)',
+                            backgroundColor: theme === 'dark' ? 'white' : 'rgb(93, 24, 3)',
                         },
                     }}
                 />
@@ -70,7 +73,7 @@ const SimpleTab = () => {
                         backgroundColor: theme === 'dark' ? 'rgb(30, 29, 29)' : 'white',
                         '&.Mui-selected': {
                             color: theme === 'dark' ? 'black' : 'white',
-                            backgroundColor: theme === 'dark' ? 'white' : 'rgb(30, 29, 29)',
+                            backgroundColor: theme === 'dark' ? 'white' : 'rgb(93, 24, 3)',
                         },
                     }}
                 />
@@ -81,7 +84,7 @@ const SimpleTab = () => {
                         backgroundColor: theme === 'dark' ? 'rgb(30, 29, 29)' : 'white',
                         '&.Mui-selected': {
                             color: theme === 'dark' ? 'black' : 'white',
-                            backgroundColor: theme === 'dark' ? 'white' : 'rgb(30, 29, 29)',
+                            backgroundColor: theme === 'dark' ? 'white' : 'rgb(93, 24, 3)',
                         },
                     }}
                 />
@@ -92,7 +95,7 @@ const SimpleTab = () => {
                         backgroundColor: theme === 'dark' ? 'rgb(30, 29, 29)' : 'white',
                         '&.Mui-selected': {
                             color: theme === 'dark' ? 'black' : 'white',
-                            backgroundColor: theme === 'dark' ? 'white' : 'rgb(30, 29, 29)',
+                            backgroundColor: theme === 'dark' ? 'white' : 'rgb(93, 24, 3)',
                         },
                     }}
                 />

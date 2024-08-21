@@ -8,6 +8,11 @@
     color: black;
 }
 
+.tabs {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
 .tabItem.dark {
     background-color: rgb(30, 29, 29);
     color: white
@@ -32,6 +37,7 @@
 .tabItem {
     min-width: 150px;
     height: 70vh;
+    overflow-y: auto;
 }
 
 .tabsContainer::-webkit-scrollbar {
@@ -40,9 +46,7 @@
 
 .tabsContainer::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.5);
-    /* Color de la barra */
     border-radius: 10px;
-    /* Bordes redondeados */
 }
 
 .MuiTabs-scrollButtons {
@@ -57,23 +61,25 @@
     .tabItem {
         padding: 10px;
     }
+}
 
-    @media (max-width: 600px) {
-        .MuiTabs-scrollButtons {
-            display: flex !important;
-            /* Asegurar que se muestren en pantallas pequeñas */
-        }
+@media (max-width: 600px) {
+    .MuiTabs-scrollButtons {
+        display: flex !important;
     }
 }
+
 
 @media (max-width: 480px) {
     .tabsContainer {
         font-size: 12px;
-        /* Ajuste del tamaño del texto en pantallas más pequeñas */
     }
 
     .tabItem {
         padding: 8px;
-        /* Ajuste del padding en pantallas más pequeñas */
+    }
+
+    .tabs {
+        margin-left: auto !important;
     }
 }

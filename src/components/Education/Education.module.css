@@ -39,6 +39,7 @@
 
 .institutes:hover {
     transform: scale(0.8);
+    cursor: pointer;
 }
 
 .institutesImage {
