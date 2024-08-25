@@ -12,6 +12,8 @@ dist
 dist-ssr
 *.local
 bfg.jar
+utils
+colors.js
 
 # Editor directories and files
 .vscode/*
