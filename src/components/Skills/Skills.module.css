@@ -9,7 +9,7 @@
     box-sizing: border-box;
     overflow: hidden;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    gap: 4%;
+    gap: 2%;
     padding-top: 4%;
 }
 
@@ -81,23 +81,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 12vw;
-    min-width: 100px;
+    width: 10%;
+    gap: 0.5rem;
     box-sizing: border-box;
     border-radius: 15%;
     border: 2px solid rgb(237, 234, 234);
     box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.2);
     opacity: 0;
     animation: fadeInGrow 0.8s ease-out forwards;
-    margin: 2rem;
+    margin: 1rem;
 }
 
 .skillImage {
     width: 80%;
     object-fit: contain;
-    margin: 2%;
 }
 
+.skillText {
+    font-size: 1em;
+    color: rgb(93, 24, 3);
+    font-weight: 900;
+    text-align: center;
+}
 
 @keyframes fadeInGrow {
     0% {
@@ -152,11 +157,23 @@
 }
 
 .skill:nth-child(11) {
-    animation-delay: 2s;
+    animation-delay: 2.2s;
 }
 
 .skill:nth-child(12) {
-    animation-delay: 2s;
+    animation-delay: 2.4s;
+}
+
+.skill:nth-child(13) {
+    animation-delay: 2.6s;
+}
+
+.skill:nth-child(14) {
+    animation-delay: 2.8s;
+}
+
+.skill:nth-child(15) {
+    animation-delay: 3s;
 }
 
 .light {
@@ -179,6 +196,33 @@
     box-shadow: 5px 5px 0 0 rgba(255, 255, 255, 0.8);
 }
 
+.dark .skillText {
+    font-size: 1em;
+    color: white;
+    font-weight: 300;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        padding-top: 1%;
+        gap: 2%;
+        height: auto;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .skillText {
+        font-size: 0.8em;
+    }
+
+    .skill {
+        flex-direction: column;
+        width: 20vw;
+    }
+}
+
 @media (max-width: 480px) {
     .container {
         padding-top: 1%;
@@ -190,10 +234,12 @@
         font-size: 2rem;
     }
 
+    .skillText {
+        font-size: 0.7em;
+    }
+
     .skill {
         flex-direction: column;
-        padding: 1.5%;
         width: 20vw;
-        margin: 1rem;
     }
 }

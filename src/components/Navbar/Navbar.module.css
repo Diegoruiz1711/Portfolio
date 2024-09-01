@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 40vw;
+    width: 40%;
     font-size: 1.5em;
     font-weight: bold;
     color: rgb(93, 24, 3);
@@ -33,13 +33,24 @@
 .options {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    width: 60vw;
-    padding: 0 2%;
+    justify-content: space-between;
+    width: 40%;
+    padding: 0 1.5%;
     height: 10vh;
 }
 
 .link {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(93, 24, 3);
+    transition: color 0.3s ease;
+    font-size: 1em;
+    font-weight: 400;
+    width: 12%;
+    text-align: center;
+}
+
+.smallLink {
     text-decoration: none;
     padding: 0 2%;
     cursor: pointer;
@@ -47,9 +58,15 @@
     transition: color 0.3s ease;
     font-size: 1em;
     font-weight: 400;
+    width: 3%;
+    text-align: center;
 }
 
 .link:hover {
+    color: #ed4c07;
+}
+
+.smallLink:hover {
     color: #ed4c07;
 }
 
@@ -86,6 +103,14 @@
         color: grey;
     }
 
+    .smallLink {
+        color: white;
+    }
+
+    .smallLink:hover {
+        color: grey;
+    }
+
     .logo {
         color: white;
     }
@@ -96,32 +121,51 @@
     }
 }
 
-@media screen and (max-width: 1000px) {
+
+@media screen and (max-width: 1500px) {
+    .options {
+        font-size: 0.8em;
+        width: 40%;
+    }
+
     .logo {
         font-size: 1.1em;
-        width: 50%;
+        width: 60%;
     }
 
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 1300px) {
+    .options {
+        width: 50%;
+    }
+
+    .logo {
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+    .options {
+        width: 52%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .options {
+        font-size: 0.7em;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .options {
         display: none;
     }
 
     .logo {
         font-size: 1em;
-        width: 60%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .options {
-        display: none;
-    }
-
-    .logo {
-        font-size: 0.9em;
         width: 80%;
     }
 }

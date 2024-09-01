@@ -12,6 +12,8 @@ const ProfileProvider = ({ children }) => {
     const [activeTab, setActiveTab] = useState(0);
     const [lang, setLang] = useState('es');
     const [selectedInstitute, setSelectedInstitute] = useState(null);
+    const [toggled, setToggled] = useState(false)
+    const [themeSwitch, setThemeSwitch] = useState('light')
 
     // Funtions
 
@@ -32,6 +34,7 @@ const ProfileProvider = ({ children }) => {
     };
 
     const toggleTheme = () => {
+        setThemeSwitch('light')
         setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
     };
 
@@ -53,6 +56,12 @@ const ProfileProvider = ({ children }) => {
         }
     };
 
+    const handleFlag = () => {
+        setToggled(!toggled);
+        const newLang = lang === 'en' ? 'es' : 'en';
+        setLang(newLang);
+        i18n.changeLanguage(newLang);
+    };
 
     // Context
     const contextValue = {
@@ -77,7 +86,11 @@ const ProfileProvider = ({ children }) => {
         toggleLang,
         selectedInstitute,
         setSelectedInstitute,
-        handleInstituteClick
+        handleInstituteClick,
+        toggled,
+        setToggled,
+        handleFlag,
+        themeSwitch, setThemeSwitch
     };
 
     return (
