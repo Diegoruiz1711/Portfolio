@@ -240,5 +240,8 @@
     .skill {
         flex-direction: column;
         width: 20vw;
+        border: 2px solid rgb(237, 234, 234);
+        box-shadow: 3px 3px 0 0 rgba(255, 255, 255, 0.8);
     }
+
 }
