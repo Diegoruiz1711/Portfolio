@@ -35,16 +35,6 @@ const Education = () => {
                 <div className={styles.institutesContainer}>
                     <div
                         className={styles.institutes}
-                        style={{ transform: selectedInstitute === 'UTN' ? 'scale(0.8)' : 'scale(1)' }}
-                        onClick={() => {
-                            toggleComponent('UTN');
-                            handleInstituteClick('UTN');
-                        }}
-                    >
-                        <img src={UTNLogo} alt="Logo UTN" className={styles.institutesImage} />
-                    </div>
-                    <div
-                        className={styles.institutes}
                         style={{ transform: selectedInstitute === 'Nuclio' ? 'scale(0.8)' : 'scale(1)' }}
                         onClick={() => {
                             toggleComponent('Nuclio');
@@ -82,6 +72,16 @@ const Education = () => {
                         }}
                     >
                         <img src={CourseraLogo} alt="Logo Coursera" className={styles.institutesImage} />
+                    </div>
+                    <div
+                        className={styles.institutes}
+                        style={{ transform: selectedInstitute === 'UTN' ? 'scale(0.8)' : 'scale(1)' }}
+                        onClick={() => {
+                            toggleComponent('UTN');
+                            handleInstituteClick('UTN');
+                        }}
+                    >
+                        <img src={UTNLogo} alt="Logo UTN" className={styles.institutesImage} />
                     </div>
                 </div>
                 <div className={styles.contentContainer}>

@@ -12,7 +12,7 @@ const CaC = () => {
         <div className={`${styles.container} ${theme === 'dark' ? styles.dark : styles.light}`}>
             <div className={styles.location}><span>Buenos Aires, Argentina </span><img src={ARGflag} alt="Logo Argentina" className={styles.flag} /> </div>
             <div className={styles.institution}>
-                <h2 className={styles.title}>Agencia de aprendizaje a lo largo de la vida</h2>
+                <h2 className={styles.title}>Agencia de Habilidades para el Futuro</h2>
                 <ul>
                     <li className={styles.list}>{t('cacJava')}</li>
                     <li className={styles.list}>{t('cacUxUi')}</li>
