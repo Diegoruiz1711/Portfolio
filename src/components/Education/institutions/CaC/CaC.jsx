@@ -14,8 +14,8 @@ const CaC = () => {
             <div className={styles.institution}>
                 <h2 className={styles.title}>Agencia de Habilidades para el Futuro</h2>
                 <ul>
-                    <li className={styles.list}>{t('cacJava')}</li>
                     <li className={styles.list}>{t('cacUxUi')}</li>
+                    <li className={styles.list}>{t('cacJava')}</li>
                 </ul>
             </div>
         </div>
